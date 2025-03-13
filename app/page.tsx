@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 
 async function redirectAction() {
   "use server";
-  redirect("/example#hash");
+  redirect("/example?hello=world#hash");
 }
 
 export default function Home() {
