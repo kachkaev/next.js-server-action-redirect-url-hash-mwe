@@ -1,4 +1,16 @@
-/** Add your relevant code here for the issue to reproduce */
+import { redirect } from "next/navigation";
+
+async function redirectAction() {
+  "use server";
+  redirect("/example#hash");
+}
+
 export default function Home() {
-  return null;
+  return (
+    <main>
+      <form action={redirectAction}>
+        <button type="submit">Redirect to /example#hash</button>
+      </form>
+    </main>
+  );
 }
