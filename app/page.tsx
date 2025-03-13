@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <form action={redirectAction}>
-        <button type="submit">Redirect to /example#hash</button>
+        <button type="submit">Redirect to /example?hello=world#hash</button>
       </form>
     </main>
   );
